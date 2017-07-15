@@ -11,10 +11,10 @@
 <script>
 	function verify(){
 	    
-		var val1=document.getElementById("one").value;
-		var val2=document.getElementById("two").value;
-		var val3=document.getElementById("three").value;
-		var val4=document.getElementById("four").value;
+		var val1=document.getElementById("11").value;
+		var val2=document.getElementById("22").value;
+		var val3=document.getElementById("33").value;
+		var val4=document.getElementById("44").value;
 		
 		if((val1.length==0)){
 			if((val1.length==0)){
@@ -90,20 +90,21 @@ button {
 </style>
 
 
-<form action="SignupServlet" style="border:1px solid #ccc">
+
+<form name="SignUp"  method="get" action="SignupServlet" onsubmit="return verify()">
   <div class="container">
     <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="11" required>
     
      <label><b>ReEmail</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="22"required>
     
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="33"required>
 
 	 <label><b>RePassword</b></label>
-    <input type="password" placeholder="Enter password" name="psw" required>
+    <input type="password" placeholder="Enter password" name="psw" id="44"required>
 	
    
     <input type="checkbox" checked="checked"> Remember me
